@@ -19,4 +19,14 @@ $container.append($h4Pet);
 
 const $h4Wand = $('<h4>').text('Ebony Wand with Unicorn Hair, Slightly Yielding.').addClass('Hippogriff')
 $container.append($h4Wand);
+
+const $ul = $('<ul>').attr('storage', 'trunk');
+  $ul.append($('<li>').text('Butter Beer'));
+  $ul.append($('<li>').text('Invisibility Cloak').addClass('secret'));
+  $ul.append($('<li>').text('Magic Map').addClass('secret'));
+  $ul.append($('<li>').text('Time Turner').addClass('secret'));
+  $ul.append($('<li>').text('Leash').addClass('Hippogriff'));
+  $ul.append($('<li>').text('Bertie Bott\'s Every Flavor [Jelly] Beans'));
+  
+  $container.append($ul);
 });
