@@ -17,7 +17,7 @@ $container.append($h3);
 const $h4Pet = $('<h4>').text('Buckbeak').addClass('Hippogriff')
 $container.append($h4Pet);
 
-const $h4Wand = $('<h4>').text('Ebony Wand with Unicorn Hair, Slightly Yielding.').addClass('Hippogriff')
+const $h4Wand = $('<h4>').text('Ebony Wand with Unicorn Hair, Slightly Yielding.')
 $container.append($h4Wand);
 
 const $ul = $('<ul>').attr('storage', 'trunk');
@@ -25,7 +25,7 @@ const $ul = $('<ul>').attr('storage', 'trunk');
   $ul.append($('<li>').text('Invisibility Cloak').addClass('secret'));
   $ul.append($('<li>').text('Magic Map').addClass('secret'));
   $ul.append($('<li>').text('Time Turner').addClass('secret'));
-  $ul.append($('<li>').text('Leash').addClass('Hippogriff'));
+  $ul.append($('<li>').text('Leash'));
   $ul.append($('<li>').text('Bertie Bott\'s Every Flavor [Jelly] Beans'));
   
   $container.append($ul);
@@ -69,4 +69,13 @@ const $ul = $('<ul>').attr('storage', 'trunk');
   $container.append($thead, $tbody)
 
   $container.append($table);
+
+  $($h4Wand).remove();
+  $('li:contains("Butter Beer")').remove();
+  const $newWand = $("<h4>").text("Ebony and Dragon Heartstring Wand").css('color', 'indigo');
+  $newWand.insertAfter($h4Pet);
+
+  $('.Hippogriff').insertAfter($newWand);
+  $('.Hippogriff').insertBefore($newWand);
+
 });
