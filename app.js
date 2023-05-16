@@ -85,4 +85,6 @@ const $ul = $('<ul>').attr('storage', 'trunk');
 $('.cabbage').css('color', 'CHARTREUSE');
 
 $h4Pet.removeClass('cabbage');
+
+$('h5').text("Fall 2018");
 });
