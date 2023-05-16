@@ -1,5 +1,5 @@
 $(() => {
-    // put jQuery in here
+    
     const $container = $('#container');
 console.log($container);
 
@@ -29,4 +29,44 @@ const $ul = $('<ul>').attr('storage', 'trunk');
   $ul.append($('<li>').text('Bertie Bott\'s Every Flavor [Jelly] Beans'));
   
   $container.append($ul);
+
+  const $h5 = $('<h5>').text('Spring 2017');
+  $container.append($h5);
+
+  const $table = $('<table>');
+
+  const $thead = $('<thead>').append(
+    $('<tr>').append(
+      $('<th>').text('Day'),
+      $('<th>').text('Classes')
+    )
+  );
+
+  const $tbody = $('<tbody>').append(
+    $('<tr>').append(
+      $('<td>').text('Monday'),
+      $('<td>').text('Herbology, Divination, History of Magic, Charms, Potions, Transfiguration, Defense Against the Dark Arts, Quidditch practice')
+    ),
+    $('<tr>').append(
+      $('<td>').text('Tuesday'),
+      $('<td>').text('Divination, Charms, Quidditch Practice, Defence Against the Dark Arts, Transfiguration, History of Magic, Herbology, Potions')
+    ),
+    $('<tr>').append(
+      $('<td>').text('Wednesday'),
+      $('<td>').text('Herbology, Divination, History of Magic, Charms, Potions, Transfiguration, Defense Against the Dark Arts, Quidditch practice')
+    ),
+    $('<tr>').append(
+      $('<td>').text('Thursday'),
+      $('<td>').text('Divination, Charms, Quidditch Practice, Defence Against the Dark Arts, Transfiguration, History of Magic, Herbology, Potions')
+    ),
+    $('<tr>').append(
+      $('<td>').text('Friday'),
+      $('<td>').text('Herbology, Divination, History of Magic, Charms, Potions, Transfiguration, Defense Against the Dark Arts, Quidditch practice')
+    )
+  );
+
+  
+  $container.append($thead, $tbody)
+
+  $container.append($table);
 });
