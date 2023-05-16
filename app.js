@@ -78,4 +78,11 @@ const $ul = $('<ul>').attr('storage', 'trunk');
   $('.Hippogriff').insertAfter($newWand);
   $('.Hippogriff').insertBefore($newWand);
 
+  $('.secret').hide('slow').delay(2000).show('slow');
+
+  $h4Pet.addClass('cabbage');
+
+$('.cabbage').css('color', 'CHARTREUSE');
+
+$h4Pet.removeClass('cabbage');
 });
